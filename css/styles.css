@@ -422,7 +422,7 @@ a.white {
 /*********************/
 
 .header {
-	background: url('../images/header-background.jpg');
+	background: url('../images/razpnat.png');
 	background-size: cover;
 }
 
@@ -997,6 +997,10 @@ a.white {
 .footer {
 	padding-top: 3rem;
 	background-color: #262431;
+	background-image: url('../images/header-background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	border-top: 1px solid;
 }
 
@@ -1057,7 +1061,7 @@ a.white {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	background-color: #262431;
+	background-color: transparent;
 	text-align: center;
 }
 
@@ -1634,13 +1638,7 @@ a:hover.back-to-top {
 }
 
 .logo-text {
-	text-shadow:
-    0 0 20px #fff,
-    0 0 40px #0ff,
-    0 0 80px #0ff,
-    0 0 90px #0ff,
-    0 0 100px #0ff,
-    0 0 150px #0ff;
+	color: #40e0ee;
 }
 
 .logo-img {
