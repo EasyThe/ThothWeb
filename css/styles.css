@@ -424,11 +424,12 @@ a.white {
 .header {
 	background: url('../images/razpnat.png');
 	background-size: cover;
+	height: 50rem;
 }
 
 .header .header-content {
 	padding-top: 1rem;
-	padding-bottom: 1rem;
+	/*padding-bottom: 1rem;*/
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -926,7 +927,11 @@ a.white {
 .counter {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	background-color: #262431;
+	background: rgb(47,44,61);
+	background: -moz-linear-gradient(0deg, rgba(47,44,61,1) 0%, rgba(38,36,49,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(47,44,61,1) 0%, rgba(38,36,49,1) 100%);
+	background: linear-gradient(0deg, rgba(47,44,61,1) 0%, rgba(38,36,49,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2c3d",endColorstr="#262431",GradientType=1);
 	text-align: center;
 }
 
@@ -951,41 +956,6 @@ a.white {
 	color: #00c9db;
 	font: 400 0.875rem/1.25rem "Open Sans", sans-serif;
 	vertical-align: middle;
-}
-
-/***********************/
-
-/*     13. Contact     */
-
-/***********************/
-
-.form {
-	padding-top: 6.25rem;
-	padding-bottom: 5.625rem;
-	background: url('../images/contact-background.jpg') center bottom no-repeat;
-	background-size: cover;
-}
-
-.form h2 {
-	margin-bottom: 1.125rem;
-	text-align: center;
-}
-
-.form .list-unstyled {
-	margin-bottom: 3.75rem;
-	font-size: 1rem;
-	line-height: 1.5rem;
-	text-align: center;
-}
-
-.form .list-unstyled .fas, .form .list-unstyled .fab {
-	margin-right: 0.5rem;
-	font-size: 0.875rem;
-	color: #00c9db;
-}
-
-.form .list-unstyled .fa-phone {
-	vertical-align: 3%;
 }
 
 /**********************/
@@ -1372,8 +1342,9 @@ a:hover.back-to-top {
 	/* end of general styles */
 	/* Header */
 	.header .header-content {
-		padding-top: 1rem;
-		padding-bottom: 10rem;
+		/*padding-top: 1rem;
+		padding-bottom: 28rem;*/
+		padding-top: 11rem;
 		text-align: left;
 	}
 	.header .text-container {
