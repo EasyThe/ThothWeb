@@ -81,6 +81,587 @@ zdr bepce, kp?
             </div>
         </div>
     </header>
+    <div id="details" class="basic-2">
+        <div class="row">
+            <div class="container" style="text-align: center;">
+                <div class="tabs">
+                    <h2>Available Commands</h2>
+                    <!-- smitestats -->
+                    <div class="tab">
+                        <input type="radio" id="rd1" name="rd">
+                        <label class="tab-label" for="rd1">
+                            <span class="span-command">
+                                <span class="command-name">/smitestats</span>
+                                PlayerName</span>
+                            <span>Display SMITE stats for the requested PlayerName</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/stats.png" />
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                </symbol>
+                            </svg>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    If you've linked your Discord & SMITE accounts via <span
+                                        class="logo-text">/link</span>
+                                    in Thoth's Database, you can check your stats
+                                    without providing a <span class="logo-text">PlayerName</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- history -->
+                    <div class="tab">
+                        <input type="radio" id="rd2" name="rd">
+                        <label class="tab-label" for="rd2">
+                            <span class="span-command">
+                                <span class="command-name">/history</span>
+                                PlayerName</span>
+                            <span>Latest match history for the requested PlayerName</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/history.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    If you've linked your Discord & SMITE accounts via <span
+                                        class="logo-text">/link</span>
+                                    in Thoth's Database, you can check your stats
+                                    without providing a <span class="logo-text">PlayerName</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- md -->
+                    <div class="tab">
+                        <input type="radio" id="rd3" name="rd">
+                        <label class="tab-label" for="rd3">
+                            <span class="span-command">
+                                <span class="command-name">/md</span>
+                                MatchID</span>
+                            <span>Match details for the requested MatchID</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/md.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mdlast -->
+                    <div class="tab">
+                        <input type="radio" id="rd4" name="rd">
+                        <label class="tab-label" for="rd4">
+                            <span class="span-command">
+                                <span class="command-name">/mdlast</span>
+                                PlayerName</span>
+                            <span>Match details for last match of the requested PlayerName</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/mdlast.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    If you've linked your Discord & SMITE accounts via <span
+                                        class="logo-text">/link</span>
+                                    in Thoth's Database, you can check your stats
+                                    without providing a <span class="logo-text">PlayerName</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- livemd -->
+                    <div class="tab">
+                        <input type="radio" id="rd5" name="rd">
+                        <label class="tab-label" for="rd5">
+                            <span class="span-command">
+                                <span class="command-name">/livemd</span>
+                                PlayerName</span>
+                            <span>Live match details for the requested PlayerName if they are currently in a
+                                match</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/livemd.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    If you've linked your Discord & SMITE accounts via <span
+                                        class="logo-text">/link</span>
+                                    in Thoth's Database, you can check your stats
+                                    without providing a <span class="logo-text">PlayerName</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wp -->
+                    <div class="tab">
+                        <input type="radio" id="rd6" name="rd">
+                        <label class="tab-label" for="rd6">
+                            <span class="span-command">
+                                <span class="command-name">/wp</span>
+                                PlayerName</span>
+                            <span>Shows all masteries for gods played for the requested PlayerName</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/wp.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    If you've linked your Discord & SMITE accounts via <span
+                                        class="logo-text">/link</span>
+                                    in Thoth's Database, you can check your stats
+                                    without providing a <span class="logo-text">PlayerName</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wr -->
+                    <div class="tab">
+                        <input type="radio" id="rd7" name="rd">
+                        <label class="tab-label" for="rd7">
+                            <span class="span-command">
+                                <span class="command-name">/wr</span>
+                                PlayerName</span>
+                            <span>Shows win rate percentage for gods played for the requested PlayerName</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/wr.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    If you've linked your Discord & SMITE accounts via <span
+                                        class="logo-text">/link</span>
+                                    in Thoth's Database, you can check your stats
+                                    without providing a <span class="logo-text">PlayerName</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div class="tab">
+                        <input type="radio" id="rd8" name="rd">
+                        <label class="tab-label" for="rd8">
+                            <span class="span-command">
+                                <span class="command-name">/link</span></span>
+                            <span>Link your Discord and SMITE accounts in Thoth's database</span>
+                        </label>
+                        <div class="tab-content">
+                            <p>The response from this command can differ depending on if you've already linked an account or not</p>
+                            <div class="command-ss">
+                                <img src="images/cmd/link.png" />
+                                <img src="images/cmd/linked.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    All commands that require <span class="command-name">PlayerName</span>are utilising the linked accounts feature.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- motd -->
+                    <div class="tab">
+                        <input type="radio" id="rd9" name="rd">
+                        <label class="tab-label" for="rd9">
+                            <span class="span-command">
+                                <span class="command-name">/motd</span></span>
+                            <span>Information about upcoming MOTDs in the game</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/motd.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- feeds -->
+                    <div class="tab">
+                        <input type="radio" id="rd10" name="rd">
+                        <label class="tab-label" for="rd10">
+                            <span class="span-command">
+                                <span class="command-name">/feeds</span></span>
+                            <span>Set a channel to get server status notifications and more (soon™)</span>
+                        </label>
+                        <div class="tab-content feeds">
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <div>
+                                    <h5>Feed Types</h5><hr>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <i class="fa-regular fa-square-check"></i>
+                                            <div class="media-body">SMITE Status</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fa-regular fa-square"></i>
+                                            <div class="media-body">Update Notes (+Hotfixes)</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fa-regular fa-square"></i>
+                                            <div class="media-body">SmiteGame Blog posts</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fa-regular fa-square"></i>
+                                            <div class="media-body">SmiteDatamining posts</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fa-regular fa-square"></i>
+                                            <div class="media-body">SmiteGame Twitter tweets</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fa-regular fa-square"></i>
+                                            <div class="media-body">SmiteGame YouTube videos</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fa-regular fa-square"></i>
+                                            <div class="media-body">SmitePro Twitter tweets</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fa-regular fa-square"></i>
+                                            <div class="media-body">SmiteProLeague blog posts</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="command-ss">
+                                <img src="images/cmd/feeds.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gods -->
+                    <div class="tab">
+                        <input type="radio" id="rd11" name="rd">
+                        <label class="tab-label" for="rd11">
+                            <span class="span-command">
+                                <span class="command-name">/gods</span></span>
+                            <span>Overall information about the gods & skins in the game and current free god rotation</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/gods.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    For God specific information use <span class="logo-text">/god</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- god -->
+                    <div class="tab">
+                        <input type="radio" id="rd12" name="rd">
+                        <label class="tab-label" for="rd12">
+                            <span class="span-command">
+                                <span class="command-name">/god</span>
+                                GodName</span>
+                            <span>Provides information about the requested god</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/godmain.png" />
+                                <img src="images/cmd/godskins.png" />
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                </symbol>
+                            </svg>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    As you start typing the name of the god you're searching for, the bot will try to
+                                    autocomplete the name for your facilitation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rgod -->
+                    <div class="tab">
+                        <input type="radio" id="rd13" name="rd">
+                        <label class="tab-label" for="rd13">
+                            <span class="span-command">
+                                <span class="command-name">/rgod</span>
+                                GodClass</span>
+                            <span>Gives you a random God and randomised build</span>
+                        </label>
+                        <div class="tab-content" style="display: flex;    flex-direction: row;    flex-wrap: wrap;    justify-content: space-evenly;">
+                            <div class="command-ss extrass">
+                                <img src="images/cmd/rgod1.png" />
+                                <img src="images/cmd/rgod.png" />
+                            </div>
+                            <div class="command-ss extrass">
+                                <img style="width: 15rem;" src="images/cmd/rgod2.png" />
+                                <img src="images/cmd/rgod3.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    The builds given by this command are totally random (troll builds).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rteam -->
+                    <div class="tab">
+                        <input type="radio" id="rd14" name="rd">
+                        <label class="tab-label" for="rd14">
+                            <span class="span-command">
+                                <span class="command-name">/rteam</span>
+                                Option</span>
+                            <span>Gives you random Gods with randomised builds for them</span>
+                        </label>
+                        <div class="tab-content" style="display: flex;    flex-direction: row;    flex-wrap: wrap;    justify-content: space-evenly;">
+                            <div class="command-ss">
+                                <img style="width: 10rem;" src="images/cmd/rteamoptions.png" />
+                            </div>
+                            <div class="command-ss extrass">
+                                <img style="width: 15rem;" src="images/cmd/rteam3.png" />
+                                <img style="width: 15rem;" src="images/cmd/rteam3res.png" />
+                            </div>
+                            <div class="command-ss extrass">
+                                <img style="width: 20rem;" src="images/cmd/rteamassault.png" />
+                                <img src="images/cmd/rteamassaultres.png" />
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- rbuild -->
+                    <div class="tab">
+                        <input type="radio" id="rd15" name="rd">
+                        <label class="tab-label" for="rd15">
+                            <span class="span-command">
+                                <span class="command-name">/rbuild</span>
+                                GodName</span>
+                            <span>Gives you a random build for the requested god</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss extrass">
+                                <img style="width: 15rem;" src="images/cmd/rbuild1.png" />
+                                <img src="images/cmd/rbuild.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    As you start typing the name of the god you're searching for, the bot will try to
+                                    autocomplete the name for your facilitation.<br>The builds given by this command are
+                                    totally random (troll builds).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="tab">
+                        <input type="radio" id="rd16" name="rd">
+                        <label class="tab-label" for="rd16">
+                            <span class="span-command">
+                                <span class="command-name">/item</span>
+                                ItemName</span>
+                            <span>Provides information about the requested item</span>
+                        </label>
+                        <div class="tab-content" style="display: flex;    flex-direction: row;    flex-wrap: wrap;    justify-content: space-evenly;">
+                            <div class="command-ss" style="margin: 0.5rem;">
+                                <img src="images/cmd/item.png" />
+                            </div>
+                            <div class="command-ss" style="margin: 0.5rem;">
+                                <img src="images/cmd/item1.png" />
+                            </div>
+                            <div class="command-ss" style="margin: 0.5rem;">
+                                <img style="width: 25rem;" src="images/cmd/item2.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    As you start typing the name of the item you're searching for, the bot will try to
+                                    autocomplete the name for your facilitation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- status -->
+                    <div class="tab">
+                        <input type="radio" id="rd17" name="rd">
+                        <label class="tab-label" for="rd17">
+                            <span class="span-command">
+                                <span class="command-name">/status</span></span>
+                            <span>Check the status of SMITE Servers</span>
+                        </label>
+                        <div class="tab-content" style="display: flex;    flex-direction: row;    flex-wrap: wrap;    justify-content: space-evenly;">
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    The first line of every platform status comes from the <a class="turquoise"
+                                        href="https://status.hirezstudios.com/" target="_blank">Status Page</a>
+                                    <br>The second line comes from the official Hi-Rez/SMITE API
+                                </div>
+                            </div>
+                            <div class="command-ss" style="margin: 0.5rem;">
+                                <img src="images/cmd/status.png" />
+                            </div>
+                            <div class="command-ss" style="margin: 0.5rem;">
+                                <img src="images/cmd/status1.png" />
+                            </div>
+                            <div class="command-ss" style="margin: 0.5rem;">
+                                <img src="images/cmd/status2.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- updatenotes -->
+                    <div class="tab">
+                        <input type="radio" id="rd18" name="rd">
+                        <label class="tab-label" for="rd18">
+                            <span class="span-command">
+                                <span class="command-name">/updatenotes</span></span>
+                            <span>Sends the last two update notes posted on the SMITEgame.com website</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/updatenotes.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- events -->
+                    <div class="tab">
+                        <input type="radio" id="rd19" name="rd">
+                        <label class="tab-label" for="rd19">
+                            <span class="span-command">
+                                <span class="command-name">/events</span></span>
+                            <span>Shows if there are any events currently available in-game</span>
+                        </label>
+                        <div class="tab-content" style="display: flex;    flex-direction: row;    flex-wrap: wrap;    justify-content: space-evenly;">
+                            <div class="command-ss">
+                                <img src="images/cmd/events.png" />
+                            </div>
+                            <div class="command-ss" style="background: none;">
+                                <img src="images/cmd/eventsingame.png" />
+                            </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    The bot checks the data shown in-game under the events tab.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bugs -->
+                    <div class="tab">
+                        <input type="radio" id="rd20" name="rd">
+                        <label class="tab-label" for="rd20">
+                            <span class="span-command">
+                                <span class="command-name">/bugs</span></span>
+                            <span>Checks the SMITE Community Issues Trello Board for current and fixed issues</span>
+                        </label>
+                        <div class="tab-content">
+                            <p>Data from the <a class="turquoise"
+                                    href="https://trello.com/b/d4fJtBlo/smite-community-issues" target="_blank">SMITE
+                                    Community Issues Trello Board</a></p>
+                            <div class="command-ss">
+                                <img src="images/cmd/bugs.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- splschedule -->
+                    <div class="tab">
+                        <input type="radio" id="rd21" name="rd">
+                        <label class="tab-label" for="rd21">
+                            <span class="span-command">
+                                <span class="command-name">/splschedule</span></span>
+                            <span>Check the Smite Pro League Schedule</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    SPL Schedule Data from the <a class="turquoise"
+                                        href="https://www.smiteproleague.com/schedule" target="_blank">SMITE Pro League
+                                        website</a>, SCC data from <a class="turquoise"
+                                        href="https://calendar.google.com/calendar/u/0/embed?src=du6lvi0d4jksj6bvehf0478bes@group.calendar.google.com"
+                                        target="_blank">SMITE Esports Broadcast Schedule Google Calendar</a>.
+                                        <br>The times shown are the converted times according to your device's timezone.
+                                </div>
+                            </div>
+                            <br>
+                            <div class="command-ss">
+                                <img src="images/cmd/splschedule.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- splstandings -->
+                    <div class="tab">
+                        <input type="radio" id="rd22" name="rd">
+                        <label class="tab-label" for="rd22">
+                            <span class="span-command">
+                                <span class="command-name">/splstandings</span></span>
+                            <span>Check the Smite Pro League Standings</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                                    <use xlink:href="#info-fill" /></svg>
+                                <div>
+                                    SPL Standings Data from the <a class="turquoise"
+                                        href="https://www.smiteproleague.com/standings" target="_blank">SMITE Pro League
+                                        website</a>.
+                                </div>
+                            </div>
+                            <br>
+                            <div class="command-ss">
+                                <img style="width: 20rem;" src="images/cmd/splstandings.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- about -->
+                    <div class="tab">
+                        <input type="radio" id="rd23" name="rd">
+                        <label class="tab-label" for="rd23">
+                            <span class="span-command">
+                                <span class="command-name">/about</span></span>
+                            <span>Check out bot statistics, invite link, support server or send feedback</span>
+                        </label>
+                        <div class="tab-content">
+                            <div class="command-ss">
+                                <img src="images/cmd/about.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="tab">
+                        <input type="radio" id="rd3" name="rd">
+                        <label for="rd3" class="tab-close">Close &times;</label>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>  
+
     <div id="details" class="basic-1">
         <div class="row">
             <div class="container" style="text-align: center;">
@@ -132,6 +713,7 @@ zdr bepce, kp?
             </div>
         </div>
     </div>
+
     <div id="details" class="basic-2">
         <div class="row">
             <div class="container" style="text-align: center;">
@@ -142,17 +724,14 @@ zdr bepce, kp?
                     </a>
                 </div>
                 <div class="listedWidgets">
-                    <a href="https://botsfordiscord.com/bots/454145330347376651" target="_blank">
-                        <img src="https://botsfordiscord.com/api/bot/454145330347376651/widget?theme=dark" />
-                    </a>
-                </div>
-                <div class="listedWidgets">
                     <a href="https://bots.ondiscord.xyz/bots/454145330347376651" target="_blank">
                         <img src="https://bots.ondiscord.xyz/bots/454145330347376651/embed?theme=dark&showGuilds=true" width="300px"/>
                     </a>
                 </div>
                 <div class="listedWidgets">
-                    <dbl-widget bot-id="bot-thoth" centered></dbl-widget>
+                    <a href="https://discordbotlist.com/bots/thoth" target="_blank">
+                        <img src="https://discordbotlist.com/api/v1/bots/thoth/widget" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -198,11 +777,15 @@ zdr bepce, kp?
                 </div>
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>Important Links</h4>
+                        <h4>Legal Stuff</h4>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
                                 <div class="media-body"><a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a class="turquoise" href="terms-of-service.html">Terms of Service</a></div>
                             </li>
                         </ul>
                     </div>
@@ -239,7 +822,7 @@ zdr bepce, kp?
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/morphext.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://discordbotlist.com/widget/index.js" async></script>
+    
 </body>
 
 </html>
